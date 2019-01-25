@@ -5,8 +5,8 @@ bot.on('message',(message)=>{
     if(message.author.bot)return;
     var msg=message.content;
 
-    if(msg=='-+-'){
-        on=!on;
+    if(msg == '-+-'){
+        on = !on;
         if(on){
             message.channel.send('Booting up');
         }else{
